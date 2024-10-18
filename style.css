@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&family=Londrina+Sketch&display=swap');
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/ground.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-color: #7dad71;
+}
+
+h1{
+  font-family: 'Lilita One', sans-serif;
+  color: #ffcb05;
+  font-size: 40px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 12vw 12vw 12vw;
+  grid-template-rows: 12vw 12vw 12vw;
+  /* border: 1px solid black;  */
+  justify-content: center;
+  gap: 0;
+}
+
+.cell {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-size: 8.5vw;
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 800;
+  color: #ffcb05;
+  background-color: #3564ae;
+}
+
+.message {
+  font-family: 'Lilita One', sans-serif;
+  color: #ffcb05;
+  font-size: 1.5rem;
+}
+
+.restart{
+  display: block;
+  justify-content: center;
+  width: 36vw;
+  height: 40px;
+  text-transform: uppercase;
+  font-family: 'Lilita One', sans-serif;
+  color: #3564ae;
+  background-color: #ffcb05;
+  border-radius: 35px;
+  font-size: 30px;
+}
