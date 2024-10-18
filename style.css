@@ -5,7 +5,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(ground.png);
+  background-image: url('./ground.png');
   background-repeat: no-repeat;
   background-size: 100vw;
   background-color: #7dad71;
