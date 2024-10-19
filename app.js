@@ -39,9 +39,9 @@ function checkWin () {
         const [a, b, c] = combination;
         if (boardState[a] && boardState [a] === boardState [b] && boardState[a] === boardState[c]){
             winnerFound = true;
-            cells[a].classList.add("winner");
-            cells[b].classList.add("winner");
-            cells[c].classList.add("winner");
+            cells[a].style.animation = 'winningAnimation 0.5s ease-in-out infinite';
+            cells[b].style.animation = 'winningAnimation 0.5s ease-in-out infinite';
+            cells[c].style.animation = 'winningAnimation 0.5s ease-in-out infinite';
             cells[a].style.backgroundColor = "rgba(53, 54, 56,0.8)";
             cells[a].style.color = "#cb413e";
             cells[b].style.backgroundColor = "rgba(53, 54, 56,0.8)";
@@ -96,7 +96,11 @@ restartButton.addEventListener('click', () => {
         cell.textContent = '';
         cell.style.backgroundColor = "";
         cell.style.border = "";
+        cell.style.animation = '';
     });
+    message.style.color = "#ffcb05";
+    restartButton.style.color = "#3564ae";
+    restartButton.style.backgroundColor = "#ffcb05";
     currentPlayer = 'X';
     gameOn = true;
     message.textContent = 'It\'s Cross\'s turn!';
