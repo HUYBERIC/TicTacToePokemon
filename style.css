@@ -24,6 +24,7 @@ h1{
   /* border: 1px solid black;  */
   justify-content: center;
   gap: 0;
+  
 }
 
 .cell {
@@ -31,12 +32,15 @@ h1{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
   font-size: 8.5vw;
   font-family: 'Lilita One', sans-serif;
   font-weight: 800;
   color: #ffcb05;
-  background-color: #3564ae;
+  background-color: rgba(255, 203, 5,0.8);
+}
+
+.cell:hover{
+  transform: scale(1.05);
 }
 
 .message {
@@ -56,4 +60,15 @@ h1{
   background-color: #ffcb05;
   border-radius: 35px;
   font-size: 30px;
+  border: 0;
+}
+
+.winner{
+  animation: winningAnimation 0.5s ease-in-out infinite;
+}
+
+@keyframes winningAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+  100% { transform: scale(1); }
 }
